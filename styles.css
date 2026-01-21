@@ -1,0 +1,75 @@
+﻿:root {
+  --hero-overlay: rgba(0, 0, 0, 0.35);
+  --hero-text: #f6f2ec;
+  --hero-accent: #d7d2c7;
+}
+
+body {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  background-color: #fff;
+}
+
+.hero {
+  min-height: 60vh;
+  color: var(--hero-text);
+  background-image:
+    linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1800&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-brand {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-link {
+  font-size: 0.85rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.hero-copy {
+  margin-top: 10vh;
+}
+
+.hero-title {
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+}
+
+.hero-subtitle {
+  font-style: italic;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--hero-accent);
+  font-size: 0.85rem;
+}
+
+.photo-frame {
+  margin-top: -6rem;
+  padding-bottom: 6rem;
+}
+
+.frame {
+  padding: 1.75rem;
+  border: 1px solid #eee;
+}
+
+.frame img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    min-height: 50vh;
+  }
+
+  .photo-frame {
+    margin-top: -4rem;
+  }
+}
